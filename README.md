@@ -7,6 +7,11 @@ useing this site users can find value of their old mobile.and admin can add the 
 #### Frontend Live link(admin area)-> https://exchangemobile.netlify.app/admin
 #### Backend Live link->https://exchange123.herokuapp.com/
 
+#### run on local->1.clone the backend and frontend code from github (link is in the below) 
+#### backend->1. npm install 2. node index.js
+#### frontened->1.npm install 2. node run dev
+
+
 #### Frontend code link-> https://github.com/bhaumikankan/Exchange-frontened.git
 #### Backend code link-> https://github.com/bhaumikankan/Exchange-backend.git
 
