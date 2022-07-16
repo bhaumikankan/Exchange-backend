@@ -10,6 +10,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/',(req,res) => {
+    res.send('hii from server')
+})
 app.use('/admin/auth',require('./routes/admin/auth'));
 app.use('/admin/product',require('./routes/admin/product'));
 app.use('/admin/getuser',require('./routes/admin/getuser'));
