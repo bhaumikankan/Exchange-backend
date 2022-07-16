@@ -1,5 +1,5 @@
 const router=require('express').Router();
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const jwt=require('jsonwebtoken');
 const saltRounds=10;
 const adminModel=require('../../db/models/adminModel');
