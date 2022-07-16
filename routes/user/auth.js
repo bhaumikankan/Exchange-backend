@@ -17,7 +17,7 @@ router.post('/register',async (req,res)=>{
             const user=await newUser.save();
             const token=jwt.sign({
                 id: user._id,
-            }, 'usersecret', { expiresIn: '1h' });
+            }, 'usersecret', { expiresIn: '12h' });
             res.send({token:token});
         }
         
@@ -34,7 +34,7 @@ router.post('/login',async(req,res)=>{
         if(user && bcrypt.compareSync(password,user.password)){
             const token=jwt.sign({
                 id: user._id,
-            }, 'usersecret', { expiresIn: '1h' });
+            }, 'usersecret', { expiresIn: '12h' });
             res.send({token:token});
         }else{
             res.send({msg:"invalid credentials"});
